@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30E5F51C-DDBD-4A3B-BFCB-2A837696F96A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OGEP</RootNamespace>
+    <AssemblyName>OGEP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\berre\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4E13A4DD1E6D68C1FC070EC398262254C79EC169</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OGEP_CléTemporaire.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\dbConst.cs" />
+    <Compile Include="Objects\ExportFct.cs" />
+    <Compile Include="Objects\Module.cs" />
+    <Compile Include="Data\OGEPdataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OGEPdataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Planing\ItemInfo.cs" />
+    <Compile Include="Planing\PlaningView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planing\PlaningView.Designer.cs">
+      <DependentUpon>PlaningView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\UserSession.cs" />
+    <Compile Include="Views\AddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddPayment.Designer.cs">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddProf.Designer.cs">
+      <DependentUpon>AddProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddStud.Designer.cs">
+      <DependentUpon>AddStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\ComboboxItem.cs" />
+    <Compile Include="Views\AddToDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddToDb.Designer.cs">
+      <DependentUpon>AddToDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Dialogs\ConfirmDeleteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ConfirmDeleteDialog.Designer.cs">
+      <DependentUpon>ConfirmDeleteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EditStud.Designer.cs">
+      <DependentUpon>EditStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Groupes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Groupes.Designer.cs">
+      <DependentUpon>Groupes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModuleGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ModuleGroups.Designer.cs">
+      <DependentUpon>ModuleGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewGroup.Designer.cs">
+      <DependentUpon>NewGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PaymentsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PaymentsHistory.Designer.cs">
+      <DependentUpon>PaymentsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfModules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfModules.Designer.cs">
+      <DependentUpon>ProfModules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfsList.Designer.cs">
+      <DependentUpon>ProfsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SelectStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SelectStudent.Designer.cs">
+      <DependentUpon>SelectStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentsList.Designer.cs">
+      <DependentUpon>StudentsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\studPaiments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\studPaiments.Designer.cs">
+      <DependentUpon>studPaiments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Planing\PlaningView.resx">
+      <DependentUpon>PlaningView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddPayment.resx">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddProf.resx">
+      <DependentUpon>AddProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddStud.resx">
+      <DependentUpon>AddStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddToDb.resx">
+      <DependentUpon>AddToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Dialogs\ConfirmDeleteDialog.resx">
+      <DependentUpon>ConfirmDeleteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EditStud.resx">
+      <DependentUpon>EditStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Groupes.resx">
+      <DependentUpon>Groupes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ModuleGroups.resx">
+      <DependentUpon>ModuleGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewGroup.resx">
+      <DependentUpon>NewGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PaymentsHistory.resx">
+      <DependentUpon>PaymentsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfModules.resx">
+      <DependentUpon>ProfModules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProfsList.resx">
+      <DependentUpon>ProfsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SelectStudent.resx">
+      <DependentUpon>SelectStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentsList.resx">
+      <DependentUpon>StudentsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\studPaiments.resx">
+      <DependentUpon>studPaiments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\OGEPdataSet.xsc">
+      <DependentUpon>OGEPdataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\OGEPdataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OGEPdataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\OGEPdataSet.xss">
+      <DependentUpon>OGEPdataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OGEP_CléTemporaire.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\list.png" />
+    <Content Include="Resources\Settings.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\presentation.png" />
+    <None Include="Resources\class.png" />
+    <None Include="Resources\schoolchild.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\alert.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\calendar.png" />
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\add-1.png" />
+    <Content Include="OGEP_db.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OGEP_db_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OGEP_db.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\funds.png" />
+    <None Include="Resources\new-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Res\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar.csproj">
+      <Project>{25649f08-3046-4891-adb8-7ea787b57063}</Project>
+      <Name>System.Windows.Forms.Calendar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
