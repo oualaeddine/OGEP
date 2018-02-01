@@ -101,15 +101,6 @@ namespace OGEP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data Source=(localDB)\\blackout;AttachDbFilename=|DataDirectory|\\OGEPdb.mdf;Integrated Security=True.
-        /// </summary>
-        internal static string DbConnectionString {
-            get {
-                return ResourceManager.GetString("DbConnectionString", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap funds {

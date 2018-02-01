@@ -26,11 +26,11 @@ namespace OGEP.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(creche_db)\\OGEP_db;AttachDbFilename=|DataDirectory|\\Creche_db.mdf;In" +
-            "tegrated Security=True")]
-        public string OGEP_dbConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localDB)\\creche_db;AttachDbFilename=|DataDirectory|\\Creche_db.mdf;In" +
+            "tegrated Security=True;Connect Timeout=30")]
+        public string Creche_dbConnectionString {
             get {
-                return ((string)(this["OGEP_dbConnectionString"]));
+                return ((string)(this["Creche_dbConnectionString"]));
             }
         }
     }
