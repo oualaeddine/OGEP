@@ -62,7 +62,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
@@ -320,6 +320,7 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MetroFramework.txt" />
     <Content Include="Resources\list.png" />
     <Content Include="Resources\Settings.png" />
     <None Include="Resources\info.png" />
@@ -330,14 +331,13 @@
     <None Include="Resources\alert.png" />
     <None Include="Resources\add-user.png" />
     <None Include="Resources\calendar.png" />
-    <Content Include="MetroFramework.txt" />
     <None Include="Resources\add-1.png" />
-    <Content Include="OGEP_db.mdf">
+    <Content Include="Creche_db.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="OGEP_db_log.ldf">
+    <Content Include="Creche_db_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>OGEP_db.mdf</DependentUpon>
+      <DependentUpon>Creche_db.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\funds.png" />
     <None Include="Resources\new-user.png" />

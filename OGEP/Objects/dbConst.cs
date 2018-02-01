@@ -9,8 +9,8 @@ namespace OGEP.Objects
     class dbConst
     {
         public static readonly string connectionString = 
-            "Data Source = (localDB)\\OGEP_db;"+
-            "AttachDbFilename=|DataDirectory|\\OGEP_db.mdf;"+
+            "Data Source = (localDB)\\creche_db;"+
+            "AttachDbFilename=|DataDirectory|\\Creche_db.mdf;"+
             "Integrated Security = True;";
 
         public static readonly string addStud =

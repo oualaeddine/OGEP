@@ -121,7 +121,7 @@
             this.AddStudTv.Name = "AddStudTv";
             this.AddStudTv.Size = new System.Drawing.Size(96, 75);
             this.AddStudTv.TabIndex = 1;
-            this.AddStudTv.Text = "Ajouter \r\nun élève";
+            this.AddStudTv.Text = "Ajouter \r\nun enfant";
             this.AddStudTv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AddStudTv.Click += new System.EventHandler(this.AddStudTv_Click);
             // 
@@ -270,6 +270,7 @@
             // 
             // UnpaidTv
             // 
+            this.UnpaidTv.AllowDrop = true;
             this.UnpaidTv.BackColor = System.Drawing.Color.Brown;
             this.UnpaidTv.CustomBackground = true;
             this.UnpaidTv.FontSize = MetroFramework.MetroLabelSize.Tall;
@@ -278,7 +279,7 @@
             this.UnpaidTv.Name = "UnpaidTv";
             this.UnpaidTv.Size = new System.Drawing.Size(96, 75);
             this.UnpaidTv.TabIndex = 1;
-            this.UnpaidTv.Text = "Retards \r\npaiments";
+            this.UnpaidTv.Text = "Retirer un enfant";
             this.UnpaidTv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.UnpaidTv.Click += new System.EventHandler(this.UnpaidTv_Click);
             // 
@@ -432,7 +433,7 @@
             this.LelevesTv.Name = "LelevesTv";
             this.LelevesTv.Size = new System.Drawing.Size(96, 75);
             this.LelevesTv.TabIndex = 1;
-            this.LelevesTv.Text = "Liste des\r\nélèves";
+            this.LelevesTv.Text = "Liste des\r\nenfants";
             this.LelevesTv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LelevesTv.Click += new System.EventHandler(this.LelevesTv_Click);
             // 
@@ -495,7 +496,7 @@
             this.LprofsTv.Name = "LprofsTv";
             this.LprofsTv.Size = new System.Drawing.Size(96, 75);
             this.LprofsTv.TabIndex = 1;
-            this.LprofsTv.Text = "Liste des\r\nenseignants";
+            this.LprofsTv.Text = "Liste des éducatrices";
             this.LprofsTv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LprofsTv.Click += new System.EventHandler(this.LprofsTv_Click);
             // 
